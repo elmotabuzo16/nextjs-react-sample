@@ -27,6 +27,7 @@ export const getStaticProps = async () => {
 
   return {
     props: {
+      // meetups because the props for <MeetupList> is meetups
       meetups: meetups.map((meetup) => ({
         title: meetup.title,
         address: meetup.address,
